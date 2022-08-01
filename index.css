@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+li {
+  list-style-type: none;
+}
+.container {
+  max-width: 1080px;
+  margin: auto;
+  text-align: center;
+  padding: 40px;
+}
+button {
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  font-weight: 700;
+  border-radius: 5px;
+  font-size: 18px;
+  background-image: linear-gradient(
+    to left top,
+    #d16ba5,
+    #c777b9,
+    #ba83ca,
+    #aa8fd8,
+    #9a9ae1,
+    #8aa7ec,
+    #79b3f4,
+    #69bff8,
+    #52cffe,
+    #41dfff,
+    #46eefa,
+    #5ffbf1
+  );
+  cursor: pointer;
+}
+button:hover {
+  background-image: linear-gradient(
+    to right top,
+    #743d5c,
+    #6e3f65,
+    #65416d,
+    #594574,
+    #4b487a,
+    #394b7b,
+    #234d7a,
+    #004f77,
+    #00506d,
+    #005061,
+    #004e54,
+    #154c48
+  );
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#colorPicker {
+  width: 80px;
+  height: 40px;
+}
+
+#colorDropDown {
+  padding: 10px 20px;
+  margin: 0 15px;
+}
+#dataDiv {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  min-height: 50vh;
+}
+#dataDiv li {
+  width: 150px;
+  position: relative;
+}
+#dataDiv span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translate(0%, 98%);
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 12px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 680px) {
+  nav {
+    display: block;
+  }
+  #colorPicker {
+    width: 100%;
+  }
+  #colorDropDown {
+    width: 100%;
+    margin: 20px auto;
+  }
+  button {
+    width: 100%;
+    display: block;
+    margin: auto;
+  }
+  #dataDiv {
+    width: 100%;
+    height: auto;
+    margin: 30px auto;
+  }
+  #dataDiv li {
+    width: 100%;
+    height: auto;
+  }
+}
+#dataDiv span {
+  /* position:static; */
+  font-size: 12px;
+}
